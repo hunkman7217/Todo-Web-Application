@@ -11,6 +11,37 @@ body {
   background-color: orangered;
 }
 
+/* Input and button group styling */
+.input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.input-group input,
+.input-group button {
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  margin:0 5px 0 5px;
+}
+.input-group button {
+  flex: 0 0 auto;
+}
+
+/* Mobile stacking for small screens */
+@media screen and (max-width: 480px) {
+  .main {
+     
+    margin: 0 50px;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .input-group input,
+  .input-group button {
+    width: 100%;
+  }
+}
 
 .main{
 text-align: center;
